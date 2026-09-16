@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# Local state
+state/
+*.local.json
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
