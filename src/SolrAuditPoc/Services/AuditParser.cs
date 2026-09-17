@@ -6,7 +6,7 @@ namespace SolrAuditPoc.Services;
 public static class AuditParser
 {
     private static readonly Regex ObjectNameRegex = new(
-        @"Object Name:\s*(?<path>[A-Za-z]:\\Shares-DFS\\FastTrack\\Candidate\\To 1189999\\(?<candidate>\d+)(?:\\[^\r\n]*)?)",
+        @"Object Name:\s*(?<path>[A-Za-z]:\\Shares-DFS\\FastTrack\\Candidate\\To 1189999\\(?<candidate>\d+)(?:\\[^\r\n]*?)?)(?=\s+Handle ID:|\r?$|\n)",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
     private static readonly Regex AccessRegex = new(
